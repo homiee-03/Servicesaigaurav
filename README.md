@@ -4,6 +4,7 @@
 
 - `server.js` - Express backend (form save, upload, WhatsApp link generation, SQLite storage)
 - `package.json` - dependencies and start script
+- `index.html` - root fallback entry that redirects to `/` (prevents blank page on hosts checking root file)
 - `data/registrations.db` - SQLite database file (auto-created)
 - `public/index.html` - Home page
 - `public/plans.html` - Intermediate plans page
