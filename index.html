@@ -3,8 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>GAURAV AI SERVICES</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg: #070f1f;
+      --panel: #1f2430;
+      --panel-2: #2d323d;
+      --line: rgba(255, 255, 255, 0.08);
+      --text: #f3f5f7;
+      --muted: #9ca3af;
+      --green: #3af292;
+      --cyan: #27d4ff;
+      --purple: #aa4dff;
+    }
+    body {
+      background: radial-gradient(circle at 10% 0%, #0d1b3a 0%, var(--bg) 55%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+    .shell { max-width: 760px; margin: 0 auto; }
+    .browser-bar { background: #141b09; border-bottom: 1px solid #2f3528; }
+    .url-pill { background: #4f5a2d; color: #e5e7eb; }
+    .top-nav { background: linear-gradient(90deg, #0d1527, #0f1535 50%, #170f35); border-bottom: 1px solid #1f2948; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02), 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .feature-row {
+      background: #343944;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+    }
+    .check {
+      width: 38px; height: 38px; border-radius: 999px;
+      background: linear-gradient(180deg, #3af292, #27d980);
+      color: #fff; display: grid; place-items: center; font-weight: 700;
+      box-shadow: 0 0 18px rgba(58,242,146,.4);
+      flex-shrink: 0;
+    }
+    .outline-check {
+      width: 38px; height: 38px; border-radius: 999px;
+      border: 3px solid #34e58a; color: #34e58a; display: grid; place-items: center; font-weight: 700;
+    }
+    .cta {
+      background: linear-gradient(90deg, #8c35f3, #b04cff);
+      border-radius: 18px;
+      box-shadow: 0 0 24px rgba(151,72,255,.45);
+    }
+    .blue-btn {
+      background: linear-gradient(90deg, #2f63d7, #3f83f0);
+      box-shadow: 0 0 24px rgba(70,132,255,.45);
+    }
+    .gemini-logo {
+      width: 72px; height: 72px; border-radius: 999px;
+      background: radial-gradient(circle at 35% 35%, #ffe347, #10a6ff 40%, #0bc071 63%, #090b13 73%);
+      box-shadow: 0 0 22px rgba(48,123,255,.45);
+    }
+    .gpt-logo {
+      width: 72px; height: 72px; border-radius: 999px; background: #0b0b0c;
+      display: grid; place-items: center; color: #fff; font-size: 38px;
+      box-shadow: 0 0 22px rgba(255,255,255,.15);
+    }
+    table td, table th { border-bottom: 1px solid rgba(255,255,255,0.07); }
+  </style>
 </head>
 <body>
+  <div class="browser-bar">
+    <div class="shell px-4 py-3 flex items-center gap-3 text-white">
+      <span class="text-2xl">⌂</span>
+      <div class="url-pill rounded-full px-4 py-2 text-2xl leading-none">gauravaiservices.replit.app</div>
+      <span class="text-4xl leading-none">＋</span>
+      <span class="text-2xl">⋮</span>
+    </div>
+  </div>
+
+  <header class="top-nav sticky top-0 z-50">
+    <div class="shell px-4 py-3 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-[radial-gradient(circle_at_30%_30%,#8b5cf6,#111827_65%)] border border-white/10"></div>
+        <h1 class="text-3xl font-bold tracking-wide">GAURAV AI SERVICES</h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="w-10 h-10 rounded-full bg-white/10">☼</button>
+        <div class="rounded-full bg-[#1b2a5f] p-1 flex gap-1 text-xl">
+          <span class="bg-white text-blue-700 rounded-full px-3 py-1 font-bold">INR</span>
+          <span class="text-slate-400 px-2 py-1">USD</span>
+        </div>
+        <div class="rounded-full bg-[#2c1f54] p-1 flex gap-1 text-xl">
+          <span class="bg-white text-purple-700 rounded-full px-3 py-1 font-bold">EN</span>
+          <span class="text-slate-400 px-2 py-1">HI</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell px-4 pb-16">
+    <section class="text-center pt-10 pb-8">
+      <div class="inline-flex rounded-full px-6 py-2 bg-white/5 border border-white/10 text-[#99c8ff] text-3xl">✧&nbsp; PREMIUM AI TOOLS</div>
+      <h2 class="text-[66px] leading-tight mt-8 font-extrabold text-[#58b4ff]">GAURAV AI SERVICES</h2>
+      <p class="text-slate-400 text-[42px] leading-snug mt-6">Get premium AI tools at the best prices. Fast delivery, reliable service, and 24/7 support.</p>
+      <div class="mt-7 text-slate-500 flex flex-wrap justify-center gap-8 text-[40px]">
+        <span>🛡 Secure</span><span>⚡ Fast Delivery</span><span>💬 24/7 Support</span>
+      </div>
+    </section>
+
+    <section class="space-y-8">
+      <article class="card p-8">
+        <div class="gpt-logo mx-auto">✺</div>
+        <h3 class="text-center text-6xl font-bold mt-6">ChatGPT Plus</h3>
+        <p class="text-center text-slate-400 text-[45px] mt-2">Full access to GPT-4, DALL-E, and more</p>
+        <p class="text-center text-yellow-400 text-4xl mt-3">★ ★ ★ ★ ★</p>
+        <p class="text-center text-slate-500 text-[38px]">Trusted by 1000+ customers</p>
+        <p class="text-center mt-6"><span class="text-red-400 line-through text-[44px]">₹1,999</span> <span class="text-[82px] font-bold">₹499</span> <span class="text-slate-400 text-[48px]">/ One Month</span></p>
+        <button class="blue-btn mt-8 w-full py-5 text-5xl rounded-3xl font-semibold">Buy Now</button>
+      </article>
+
+      <article class="card p-8 border border-purple-500/40">
+        <div class="gemini-logo mx-auto"></div>
+        <h3 class="text-center text-6xl font-bold mt-6">Gemini Ultra</h3>
+        <p class="text-center text-slate-400 text-[45px] mt-2">Google's most capable AI model</p>
+        <p class="text-center text-yellow-400 text-4xl mt-3">★ ★ ★ ★ ★</p>
+        <p class="text-center text-slate-500 text-[38px]">Trusted by 2800+ customers</p>
+        <p class="text-center mt-6 text-yellow-400 text-[70px] font-extrabold">45,000 Credits</p>
+        <button class="cta mt-8 w-full py-5 text-5xl rounded-3xl font-semibold">Buy Now</button>
+      </article>
+    </section>
+
+    <section class="text-center mt-14">
+      <div class="gemini-logo mx-auto"></div>
+      <h2 class="text-7xl font-bold mt-6">Gemini Ultra Plans</h2>
+      <p class="text-slate-400 text-[42px] mt-2">Select the perfect tier for your needs</p>
+      <button class="cta mt-6 px-10 py-4 text-4xl font-bold">COMPARE ALL PLANS</button>
+    </section>
+
+    <section class="space-y-7 mt-9">
+      <article class="card p-8 text-center"><h3 class="text-6xl font-bold">15 Users Ultra Shared Account</h3><p class="text-[#66aaff] text-7xl mt-3 font-bold">2,000 INR <span class="text-slate-400 text-5xl">/ One Month</span></p><p class="text-yellow-400 text-6xl mt-1">with 45k Credits</p><button class="cta mt-6 px-14 py-4 text-5xl font-semibold">Buy Now</button></article>
+      <article class="card p-8 text-center"><h3 class="text-6xl font-bold">10 Users Ultra Shared Account</h3><p class="text-[#66aaff] text-7xl mt-3 font-bold">4,200 INR <span class="text-slate-400 text-5xl">/ One Month</span></p><p class="text-[#66aaff] text-6xl mt-1">with 135k Credits</p><button class="cta mt-6 px-14 py-4 text-5xl font-semibold">Buy Now</button></article>
+      <article class="card p-8 text-center"><h3 class="text-6xl font-bold">5 Users Ultra Shared Account</h3><p class="text-[#66aaff] text-7xl mt-3 font-bold">12,000 INR <span class="text-slate-400 text-5xl">/ One Month</span></p><p class="text-[#48ee9a] text-6xl mt-1">with 200k Credits</p><button class="cta mt-6 px-14 py-4 text-5xl font-semibold">Buy Now</button></article>
+      <article class="card p-8 text-center"><h3 class="text-6xl font-bold">3 Users Ultra Shared Account</h3><p class="text-[#66aaff] text-7xl mt-3 font-bold">18,000 INR <span class="text-slate-400 text-5xl">/ One Month</span></p><p class="text-[#ff6b79] text-6xl mt-1">with 225k Credits</p><button class="cta mt-6 px-14 py-4 text-5xl font-semibold">Buy Now</button></article>
+      <article class="card p-8 text-center"><h3 class="text-6xl font-bold">PERSONAL ACCOUNT</h3><p class="text-red-400 line-through text-5xl mt-2">₹24,500</p><p class="text-[#66aaff] text-7xl font-bold">15,000 INR <span class="text-slate-400 text-5xl">/ One Month</span></p><p class="text-yellow-400 text-6xl">with 45k credits</p><button class="cta mt-6 px-14 py-4 text-5xl font-semibold">Buy Now</button></article>
+    </section>
+
+    <section class="mt-10 card p-7">
+      <div class="flex items-center gap-4">
+        <div class="gemini-logo !w-16 !h-16"></div>
+        <div>
+          <h3 class="text-6xl font-bold">15 Users Ultra Shared Account</h3>
+          <p class="text-purple-300 text-5xl">Services Included</p>
+          <p class="text-green-400 text-6xl font-bold">₹2,000 / One Month</p>
+        </div>
+      </div>
+      <div class="mt-6 rounded-3xl overflow-hidden border border-white/10 bg-black/50 h-64"></div>
+
+      <div class="space-y-4 mt-5 text-[47px]">
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="check">✓</span><span class="text-yellow-400 font-bold">45,000 Credits</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="check">✓</span><span>30 Days Warranty</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="check">✓</span><span>All 15 users within this shared group will create their own separate projects</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="check">✓</span><span>The assets (images & videos etc..) that you create will be licensed only by you, no other group member can use them</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="check">✓</span><span>No Log Out Problem</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="check">✓</span><span>No Account Suspension Problem</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Google Gemini</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Google AI Studio (Unlimited Audio & Coding)</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Google Whisk (Unlimited Image Generation)</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Google Flow (Unlimited Video Generation)</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Notebook LM Ultra (Unlimited Audio & Video Book)</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Nano Banana Pro (No Gemini Logo Watermark)</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Veo 3.1 (No Veo 3 Watermark)</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Google Mixboard</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Music FX</span></div>
+        <div class="feature-row px-5 py-4 flex gap-4 items-center"><span class="outline-check">✓</span><span>Upcoming All AI Free Access - Google Pomelli, Project Mariner etc.</span></div>
+      </div>
+
+      <div class="feature-row mt-5 px-6 py-5 text-center text-[58px] text-green-400 font-bold">PERMISSION TO USE 200K Credits ✅</div>
+
+      <div class="feature-row mt-5 p-5">
+        <p class="text-yellow-400 text-5xl font-bold">⚠ Important Note</p>
+        <div class="feature-row mt-4 p-4 text-[43px]">👥 Apart from you, <span class="text-yellow-400 font-bold">14 more people</span> will use this account because this is a <span class="text-cyan-400 font-bold">shared account.</span></div>
+        <div class="feature-row mt-4 p-4 text-[43px]">🚫 You will <span class="text-[#ff6f7c] font-bold">not be allowed</span> to use <span class="text-yellow-400 font-bold">45k credits</span> in this account because if we allow all team members to use credits, the credits will be exhausted in 1 day. So what is the <span class="text-green-400 font-bold">solution?</span></div>
+        <div class="feature-row mt-4 p-4 text-[43px]">🎬 If you make a video using <span class="text-purple-400 font-bold">Veo 3.1 FAST MODE</span> (2nd no. modal) your <span class="text-green-400 font-bold">0 credits</span> will be used, and you can make <span class="text-cyan-400 font-bold">unlimited Hollywood level</span> high quality videos from it.</div>
+
+        <div class="feature-row mt-4 p-0 overflow-hidden">
+          <table class="w-full text-[42px]">
+            <thead class="bg-white/10"><tr><th class="p-4 text-left text-purple-300">Modal</th><th class="p-4 text-[#8fc7ff]">Credit Use / Video</th><th class="p-4 text-green-300">Permission</th></tr></thead>
+            <tbody>
+              <tr><td class="p-4">Veo 3.1 Fast</td><td class="p-4">10 Credits</td><td class="p-4 text-center text-red-400">✕</td></tr>
+              <tr><td class="p-4">Veo 3.1 Fast [LP]</td><td class="p-4">0 Credits</td><td class="p-4 text-center text-green-400">✓</td></tr>
+              <tr><td class="p-4">Veo 3.1 Quality</td><td class="p-4">100 Credits</td><td class="p-4 text-center text-red-400">✕</td></tr>
+              <tr><td class="p-4">4k Video Download</td><td class="p-4">50 Credits</td><td class="p-4 text-center text-red-400">✕</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-3xl h-64 bg-[radial-gradient(circle_at_30%_30%,#2f85ef,#2bb0ff_45%,#1a2f58)]"></div>
+      <button class="cta mt-6 w-full py-5 text-5xl font-bold">CONTINUE TO PROCEED</button>
+    </section>
+
+    <section class="mt-10 card p-7">
+      <p class="text-slate-400 text-5xl">← Back</p>
+      <div class="flex items-center gap-4 mt-6">
+        <div class="gemini-logo !w-16 !h-16"></div>
+        <div>
+          <h3 class="text-6xl font-bold">15 Users Ultra Shared</h3>
+          <p class="text-purple-300 text-5xl">How many shared accounts do you need?</p>
+        </div>
+      </div>
+      <div class="space-y-4 mt-6 text-[49px]">
+        <label class="feature-row block p-4 border-purple-400 bg-purple-900/25"><span class="mr-3 text-purple-300">◉</span> 1 Shared Account <span class="float-right text-purple-300 font-bold">₹2,000</span></label>
+        <label class="feature-row block p-4"><span class="mr-3 text-slate-500">◯</span> 2 Shared Accounts <span class="float-right font-bold text-slate-400">₹4,000</span></label>
+        <label class="feature-row block p-4"><span class="mr-3 text-slate-500">◯</span> 3 Shared Accounts <span class="float-right font-bold text-slate-400">₹6,000</span></label>
+        <label class="feature-row block p-4"><span class="mr-3 text-slate-500">◯</span> 4 Shared Accounts <span class="float-right font-bold text-slate-400">₹8,000</span></label>
+        <label class="feature-row block p-4"><span class="mr-3 text-slate-500">◯</span> 5 Shared Accounts <span class="float-right font-bold text-slate-400">₹10,000</span></label>
+      </div>
+      <button class="cta mt-7 w-full py-5 text-5xl font-bold">CONTINUE - ₹2,000</button>
+    </section>
+
+    <footer class="text-center text-slate-500 py-10 text-[38px]">© 2026 Gaurav AI Services. All rights reserved.</footer>
+  </main>
 </body>
 </html>
