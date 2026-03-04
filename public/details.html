@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Details</title><script src='https://cdn.tailwindcss.com'></script><link rel='stylesheet' href='/styles.css'></head><body><main class='max-w-3xl mx-auto px-4 py-8'><a href='/plans.html' class='text-slate-400'>← Back</a><section class='card p-6 mt-4'><h1 id='planTitle' class='text-3xl font-bold'></h1><p class='text-purple-300'>Services Included</p><p id='planAmount' class='text-green-300 text-2xl font-bold'></p><div class='space-y-3 mt-5'>
+<div class='chip p-3 flex items-center gap-3'><span class='check'>✓</span><span id='creditsLine'></span></div>
+<div class='chip p-3 flex items-center gap-3'><span class='check'>✓</span><span>30 Days Warranty</span></div>
+<div class='chip p-3 flex items-center gap-3'><span class='check'>✓</span><span>No Log Out Problem</span></div>
+<div class='chip p-3 flex items-center gap-3'><span class='check'>✓</span><span>No Account Suspension Problem</span></div>
+<div class='chip p-3 flex items-center gap-3'><span class='check'>✓</span><span>Google Gemini, AI Studio, Whisk, Flow, Notebook LM Ultra, Music FX</span></div>
+</div>
+<div class='chip p-4 mt-5'><p class='text-green-300 font-bold' id='permissionText'></p><p class='text-yellow-300 mt-2'>⚠ Important Note</p><p class='text-slate-200'>Apart from you, other members may use this shared account. Usage policies apply.</p></div>
+<a id='continueBtn' class='btn-purple mt-6 block text-center rounded-2xl py-3 text-2xl font-bold' href='#'>CONTINUE TO PROCEED</a></section></main>
+<script>
+const q=new URLSearchParams(location.search);const plan=q.get('plan')||'Plan';const amount=q.get('amount')||'0';const credits=q.get('credits')||'45000';
+document.getElementById('planTitle').textContent=plan;
+document.getElementById('planAmount').textContent=`₹${Number(amount).toLocaleString('en-IN')} / One Month`;
+document.getElementById('creditsLine').textContent=`${Number(credits).toLocaleString('en-IN')} Credits`;
+document.getElementById('permissionText').textContent=`PERMISSION TO USE ${Math.round(Number(credits)/1000)}K Credits ✅`;
+document.getElementById('continueBtn').href=`/register.html?plan=${encodeURIComponent(plan)}&amount=${encodeURIComponent(amount)}&credits=${encodeURIComponent(credits)}`;
+</script></body></html>
